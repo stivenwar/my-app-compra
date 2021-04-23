@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title >Favoritos</ion-title>
+    <ion-back-button slot="start" [defaultHref]="'/lista'"  ></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row >
+      <ion-col  size="6" *ngFor="let f of favoritos2">
+        <ion-card >
+          <ion-buttons >
+            <ion-button class="abs">
+              <ion-icon id="icono" color="light"  name="heart"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+          <ion-img [src]="f.image_url" ></ion-img>
+          <div class="card">
+            <ion-label  >{{f.productName}}</ion-label>
+            <ion-label  color="primary">${{f.price}} </ion-label>
+            <div class="dis">
+              <ion-label  >{{f.stock}} left</ion-label>
+            </div>
+            <div class="dis">
+              <ion-label align="center"  >{{f.productDescription}} left</ion-label>
+            </div>
+            <ion-button (click)="delete(f.id)" >
+              <ion-icon name="trash-outline"></ion-icon>
+            </ion-button>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

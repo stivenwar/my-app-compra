@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title >Groceries</ion-title>
+    <ion-button routerLink="/favoritos" color="light" slot="end"><ion-icon name="heart"></ion-icon></ion-button>
+    <ion-button routerLink="/carrito" color="light" slot="end"><ion-icon name="bag-handle-outline"></ion-icon></ion-button>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-grid>
+      <ion-row >
+        <ion-col  size="6" *ngFor="let p of productos"  >
+          <ion-card >
+            <ion-buttons >
+              <ion-button (click)="addFavorito(p)" class="abs">
+                <ion-icon id="icono" color="light"  name="heart"></ion-icon>
+                </ion-button>
+                </ion-buttons>
+            <ion-img [src]="p.image_url" ></ion-img>
+            <div class="card">
+              <ion-label  >{{p.productName}}</ion-label>
+              <ion-label  color="primary">${{p.price}} </ion-label>
+              <div class="display">
+                  <ion-label  >{{p.stock}} left</ion-label>
+                  <ion-button  (click)="getInfo(p)" class="btn" size="small" color="primary" ><ion-icon name="add-outline"></ion-icon>add</ion-button>
+              </div>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>

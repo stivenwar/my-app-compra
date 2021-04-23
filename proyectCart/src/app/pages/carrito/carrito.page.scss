@@ -1,0 +1,36 @@
+.cabecera{
+  margin-left: 30%;
+}
+.border{
+  border: solid grey 1px;
+  border-radius: 5px;
+
+}
+.display{
+ display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.fuente{
+ font-size: small;
+  font-weight:bolder;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+
+}
+.position{
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+}
+.padding{
+  padding: 3%;
+}
+
+
+
+
+

@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="cabecera">carrito</ion-title>
+    <ion-back-button slot="start" [defaultHref]="'/lista'"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+<ion-content >
+  <ion-list *ngFor="let p of productos">
+    <ion-grid >
+      <ion-row>
+        <ion-col>
+          <ion-img [src]="p.image_url"></ion-img>
+        </ion-col>
+        <ion-col class="display">
+          <ion-label class="fuente">{{p.productName}}</ion-label>
+          <ion-label color="primary" align="end" >${{p.price*mapStock[p.id]}}</ion-label>
+          <div class="border">
+            <ion-row>
+              <ion-col>
+                  <ion-button (click)="disminuir(p.id,p.price)" expand="block">-</ion-button>
+              </ion-col>
+              <ion-col>
+                <div class="center">
+                  <ion-label >{{mapStock[p.id]}}</ion-label>
+                </div>
+              </ion-col>
+              <ion-col>
+                  <ion-button (click)="aumentar(p.id,p.stock,p.price)" expand="block" >+</ion-button>
+              </ion-col>
+            </ion-row>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+
+  <ion-footer class="position">
+    <ion-toolbar class="padding">
+      <ion-label >Total amaount: $ {{numero2}}</ion-label>
+      <ion-button (click)="pagar()" expand="block"> Make a payment</ion-button>
+    </ion-toolbar>
+  </ion-footer>
+
+</ion-content>
