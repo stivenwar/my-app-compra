@@ -13,7 +13,6 @@ export class ListaPage implements OnInit {
 
   favoritos: any[] = [];
 
-  i:any[] = [];
 
 
 
@@ -62,9 +61,9 @@ export class ListaPage implements OnInit {
   }
 
 
-  addFavorito(p:any) {
-    let repe = true;
+  addFavorito(p: any) {
 
+    let repe = true;
     if (this.favoritos.length === 0){
       this.favoritos.push(p);
       localStorage.setItem("prodFavoritos", JSON.stringify(this.favoritos));
@@ -87,4 +86,5 @@ export class ListaPage implements OnInit {
       console.log(this.favoritos);
     }
   }
+
 }

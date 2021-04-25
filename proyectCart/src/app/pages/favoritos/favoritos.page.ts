@@ -10,16 +10,22 @@ export class FavoritosPage implements OnInit {
   favoritos: any[];
   favoritos2: any[];
 
+  show: number = 0;
+
   constructor() {
+
   }
 
   ngOnInit() {
+
     const favoritos = localStorage.getItem("prodFavoritos");
     this.favoritos = JSON.parse(favoritos);
 
     localStorage.setItem("Favoritos", JSON.stringify(this.favoritos));
     const f2 = localStorage.getItem("Favoritos");
     this.favoritos2 = JSON.parse(f2);
+
+
   }
 
   delete(id: any) {
@@ -36,5 +42,22 @@ export class FavoritosPage implements OnInit {
         }
       }
     }
+  }
+
+   descripcion(index: any) {
+
+    this.show = index;
+
+      let vista =  document.getElementById('caja').style.display;
+      if (vista === 'none') {
+        vista = 'block';
+      } else {
+        vista = 'none';
+      }
+      document.getElementById('caja').style.display = vista;
+
+
+
+
   }
 }

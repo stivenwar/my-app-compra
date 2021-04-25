@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd029377-0d09-41c7-aec2-388d0d92c5aa" name="Default Changelist" comment="" />
+    <list default="true" id="cd029377-0d09-41c7-aec2-388d0d92c5aa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyectCart/src/app/pages/favoritos/favoritos.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/proyectCart/src/app/pages/favoritos/favoritos.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyectCart/src/app/pages/favoritos/favoritos.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyectCart/src/app/pages/favoritos/favoritos.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyectCart/src/app/pages/lista/lista.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/proyectCart/src/app/pages/lista/lista.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyectCart/src/app/pages/lista/lista.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proyectCart/src/app/pages/lista/lista.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/db.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1rQTGkJhtSMdtw40TUkUTZABscv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,7 +43,12 @@
       <workItem from="1618935791915" duration="2714000" />
       <workItem from="1618992426708" duration="21614000" />
       <workItem from="1619078942891" duration="22254000" />
-      <workItem from="1619167419930" duration="30649000" />
+      <workItem from="1619167419930" duration="30793000" />
+      <workItem from="1619200896161" duration="248000" />
+      <workItem from="1619201155195" duration="59000" />
+      <workItem from="1619202196689" duration="16000" />
+      <workItem from="1619261264875" duration="1010000" />
+      <workItem from="1619384653974" duration="8338000" />
     </task>
     <servers />
   </component>
@@ -44,5 +60,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619191261049" />
+    <state x="838" y="418" key="Github.ShareDialog" timestamp="1619200690827">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="838" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619200690827" />
+    <state x="773" y="218" key="Github.UntrackedFilesDialog" timestamp="1619200698232">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="773" y="218" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619200698232" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1619200709689">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1619200709689" />
   </component>
 </project>
